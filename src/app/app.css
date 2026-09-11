@@ -1,0 +1,141 @@
+.container {
+  width: 100%;
+  min-width: 450px;
+  max-width: 550px;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+
+h1 {
+  text-align: center; 
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Campos modernos */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #56ab2f;
+}
+
+.input-container button {
+  padding: 0 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #56ab2f;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #448c24;
+  transform: translateY(-2px);
+}
+
+/* Lista de Tarefas */
+.lista-tarefas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  background-color: #f9fbf9;
+  border-radius: 10px;
+  border: 1px solid #edf2ee;
+  transition: all 0.3s ease;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  color: #333;
+}
+
+.task label input[type="checkbox"] {
+  transform: scale(1.4);
+  accent-color: #56ab2f;
+  cursor: pointer;
+}
+
+
+.task.completed {
+  background-color: #f0f0f0;
+  border-color: #e0e0e0;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.btn-remover {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.btn-remover:hover {
+  background-color: #ff6b81;
+  transform: scale(1.05);
+}
+
+
+.contador {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+  font-size: 18px;
+  text-align: center;
+  color: #56ab2f;
+  font-weight: 600;
+}
+
+.mensagem-vazia {
+  text-align: center;
+  color: #999;
+  padding: 20px 0;
+  font-style: italic;
+}
